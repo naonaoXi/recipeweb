@@ -14,7 +14,7 @@ class Detail extends React.Component {
         const url = window.location.href; 
         const id = url.split('details/')[1]; 
         console.log(id); 
-        Axios.get(`https://api.spoonacular.com/recipes/${id}/information?apiKey=4316c0b39e8d4a28bed9d0f81776e297&includeNutrition=true.`) 
+        Axios.get(`https://api.spoonacular.com/recipes/${id}/information?apiKey=7ac94313c9bf4940828a390f8bd808b2&includeNutrition=true.`) 
             .then(response => { 
                 console.log(123) 
                 console.log(response.data) 
@@ -37,7 +37,7 @@ class Detail extends React.Component {
                             className="card-img-top text-center" 
                             data-src="" 
                             alt="Recipe Pic" 
-                            style={{height: 525, width:600}}
+                            style={{width:300}}
                             src={this.state.detailRecipe.image} 
                             data-holder-rendered="true" />
                         <div className="h3 mb-3 font-weight-normal text-center">
